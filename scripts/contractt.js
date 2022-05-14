@@ -37,8 +37,11 @@ async function main() {
   await erc0.publish1(owners[3].address)
 
   console.log("Owner 0 Stage 1 balance: ", await erc0.balanceOf(owners[0].address))
+  console.log("Owner 1 Stage 1 balance: ", await erc1.balanceOf(owners[1].address))
+  console.log("Owner 2 Stage 1 balance: ", await erc2.balanceOf(owners[2].address))
+  console.log("Owner 3 Stage 1 balance: ", await erc3.balanceOf(owners[3].address))
 
-
+  
  await erc1.publish2(final)
 
  await erc2.publish2(final)
